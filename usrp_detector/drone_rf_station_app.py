@@ -1,8 +1,8 @@
 """
-无人机 RF 检测站 — 全 Python 一体化（N310 采集 / 可视化 / S3R 开放集推理）
+无人机 RF 检测站 — 全 Python 一体化（N310 采集 / 可视化 / 开放集推理）
 
-启动（工作目录 DroneDetect_V2，解释器 tf210）:
-  python s3r_detector_software/drone_rf_station_app.py
+启动:
+  python usrp_detector/drone_rf_station_app.py
 
 模式:
   1. 采集与可视化 — 仅采 .dat + 片段 STFT 预览（等同 MATLAB 采集后看图）

@@ -2,8 +2,8 @@
 将训练完成的 run 目录打包为可部署 bundle（不修改训练脚本）。
 
 用法（工作目录 DroneDetect_V2）:
-  python s3r_detector_software/export_s3r_deploy_bundle.py model_s3r_open_set_result/.../seed42
-  python -m s3r_detector_software.export_s3r_deploy_bundle <run_dir> --out deploy/my_detector
+  python usrp_detector/export_s3r_deploy_bundle.py model_s3r_open_set_result/.../seed42
+  python -m usrp_detector.export_s3r_deploy_bundle <run_dir> --out deploy/my_detector
 """
 
 from __future__ import annotations

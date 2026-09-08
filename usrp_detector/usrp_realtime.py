@@ -7,7 +7,7 @@ USRP 实时检测管线：IQ 采集 → STFT+Z-score → S3R 开放集推断。
   - sim   : 正弦+噪声仿真 IQ（快速冒烟测试）
 
 用法:
-  python s3r_detector_software/usrp_realtime_app.py
+  python usrp_detector/usrp_realtime_app.py
 """
 
 from __future__ import annotations

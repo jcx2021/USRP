@@ -2,7 +2,7 @@
 USRP 实时开放集检测 GUI。
 
 启动（工作目录 DroneDetect_V2，解释器 tf210）:
-  python s3r_detector_software/usrp_realtime_app.py
+  python usrp_detector/usrp_realtime_app.py
 
 依赖:
   - 已训练 run 目录（权重 + S3R 边界）

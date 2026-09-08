@@ -1,9 +1,9 @@
 """
-S3R / TSR-Open 无人机 RF 开放集检测 — 桌面演示。
+USRP 无人机 RF 开放集检测 — 桌面演示。
 
-用法（工作目录 DroneDetect_V2，与训练相同 Python 环境）:
-  python s3r_detector_software/s3r_detector_app.py
-  python -m s3r_detector_software.s3r_detector_app
+用法:
+  python usrp_detector/s3r_detector_app.py
+  python -m usrp_detector.s3r_detector_app
 """
 
 from __future__ import annotations
@@ -16,7 +16,7 @@ from tkinter import filedialog, messagebox, ttk
 
 import numpy as np
 
-# 支持直接运行脚本: python s3r_detector_software/s3r_detector_app.py
+# 支持直接运行脚本: python usrp_detector/s3r_detector_app.py
 if __package__ in (None, ''):
     _pkg = os.path.dirname(os.path.abspath(__file__))
     _root = os.path.dirname(_pkg)
@@ -31,7 +31,7 @@ from s3r_inference_engine import S3RDetector, format_prediction, prepare_batch
 class S3RDetectorApp:
     def __init__(self, root: tk.Tk):
         self.root = root
-        self.root.title('无人机 RF 开放集检测 (S3R / TSR-Open)')
+        self.root.title('USRP 无人机 RF 开放集检测')
         self.root.geometry('1100x720')
 
         self.detector: S3RDetector | None = None

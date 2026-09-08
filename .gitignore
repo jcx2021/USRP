@@ -1,0 +1,30 @@
+# 录制 IQ / 处理后的数据（体积大，不进仓库）
+recordings/
+output/
+*.dat
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.overflow.json
+*_diag.png
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# 网卡驱动安装包与目录搜索缓存
+drivers/
+
+# 本机日志
+*.log
+thumbs.db
+Desktop.ini
